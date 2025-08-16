@@ -1,14 +1,5 @@
 📊 Expense Tracker (Full Stack)
 
-
-
-
-
-
-
-
-
-
 🚀 A full-stack expense tracker web application built with React (Vite) + Tailwind CSS for the frontend, Express.js + Firebase Firestore for the backend, and Firebase Authentication for secure user login.
 
 Easily manage your income and expenses, categorize transactions, and view insights with beautiful charts.
@@ -31,27 +22,6 @@ Frontend: React (Vite), Tailwind CSS, Recharts
 Backend: Express.js, Firebase Admin SDK, Joi, Morgan, CORS
 Database & Auth: Firebase Firestore, Firebase Authentication
 
-📂 Project Structure
-expense-tracker/
-├─ backend/                          # Express.js + Firebase Admin
-│  ├─ src/
-│  │  ├─ routes/                     # API routes
-│  │  ├─ controllers/                # Controller logic
-│  │  ├─ services/                   # Firebase setup
-│  │  ├─ middleware/                 # Auth & error handling
-│  │  └─ validators/                 # Joi schemas
-│  ├─ package.json
-│  └─ .env                           # Backend secrets
-│
-└─ frontend/                         # React + Vite + Tailwind
-   ├─ src/
-   │  ├─ api/                        # Axios client
-   │  ├─ auth/                       # Firebase client setup
-   │  ├─ components/                 # Reusable UI components
-   │  ├─ pages/                      # Dashboard, Transactions, Login, Register
-   │  └─ utils/                      # Helper functions (formatting, etc.)
-   ├─ package.json
-   └─ .env                           # Frontend env (API + Firebase config)
 
 
 ⚡ Installation & Setup
