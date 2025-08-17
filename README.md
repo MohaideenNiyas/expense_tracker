@@ -1,32 +1,40 @@
-📊 Expense Tracker (Full Stack)
+# 📊 Expense Tracker (Full Stack)
 
-🚀 A full-stack expense tracker web application built with React (Vite) + Tailwind CSS for the frontend, Express.js + Firebase Firestore for the backend, and Firebase Authentication for secure user login.
+[![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)](https://reactjs.org/)  
+[![TailwindCSS](https://img.shields.io/badge/Style-TailwindCSS-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)  
+[![Express](https://img.shields.io/badge/Backend-Express.js-000000?logo=express)](https://expressjs.com/)  
+[![Firebase](https://img.shields.io/badge/Database-Firebase-orange?logo=firebase)](https://firebase.google.com/)  
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)  
 
-Easily manage your income and expenses, categorize transactions, and view insights with beautiful charts.
+🚀 A **full-stack expense tracker web application** built with **React (Vite) + Tailwind CSS** for the frontend, **Express.js + Firebase Firestore** for the backend, and **Firebase Authentication** for secure login.  
 
-🌍 Live Demo
+---
 
-Frontend (Vercel): https://expense-tracker-45.vercel.app
+## 🌍 Live Demo
 
-Backend (Render): https://expense-tracker-y5n0.onrender.com
+- **Frontend (Vercel):** [https://expense-tracker-45.vercel.app](https://expense-tracker-45.vercel.app)  
+- **Backend (Render):** [https://expense-tracker-y5n0.onrender.com](https://expense-tracker-y5n0.onrender.com)  
 
-✨ Features
+---
 
-🔐 Authentication – Secure login & registration with Firebase Auth (Email/Password)
+## ✨ Features
 
-💰 Transaction Management – Add, edit, delete, and categorize expenses/income
+- 🔐 **Authentication** – Secure login & registration with Firebase Auth  
+- 💰 **Transactions** – Add, edit, delete, and categorize income/expenses  
+- 📊 **Dashboard Insights** – Monthly trends & category breakdowns with charts  
+- 🎨 **Modern UI** – Responsive design with Tailwind CSS  
+- ☁️ **Cloud Storage** – Transactions stored securely in Firebase Firestore  
+- 🚀 **Deployment Ready** – Frontend on Vercel & Backend on Render  
 
-📊 Dashboard & Insights – View totals, balances, category breakdowns, and monthly charts
+---
 
-🎨 Responsive UI – Modern Tailwind CSS design with reusable components
+## 🛠️ Tech Stack
 
-🚀 Deployment Ready – Backend (Render/Heroku), Frontend (Netlify/Vercel), Database (Firebase Firestore)
+**Frontend:** React (Vite), Tailwind CSS, Recharts, Firebase Client SDK  
+**Backend:** Express.js, Firebase Admin SDK, Joi, CORS, Morgan  
+**Database & Auth:** Firebase Firestore, Firebase Authentication  
 
-🛠️ Tech Stack
-
-Frontend: React (Vite), Tailwind CSS, Recharts
-Backend: Express.js, Firebase Admin SDK, Joi, Morgan, CORS
-Database & Auth: Firebase Firestore, Firebase Authentication
+---
 
 
 ⚡ Installation & Setup
