@@ -1,10 +1,10 @@
 # Expense Tracker (Full Stack)
 
-[![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)](https://reactjs.org/)  
-[![TailwindCSS](https://img.shields.io/badge/Style-TailwindCSS-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)  
-[![Express](https://img.shields.io/badge/Backend-Express.js-000000?logo=express)](https://expressjs.com/)  
-[![Firebase](https://img.shields.io/badge/Database-Firebase-orange?logo=firebase)](https://firebase.google.com/)  
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)  
+[![React](https://reactjs.org/)  
+[![TailwindCSS](https://tailwindcss.com/)  
+[![Express](https://expressjs.com/)  
+[![Firebase](https://firebase.google.com/)  
+
 
 🚀 A **full-stack expense tracker web application** built with **React (Vite) + Tailwind CSS** for the frontend, **Express.js + Firebase Firestore** for the backend, and **Firebase Authentication** for secure login.  
 
