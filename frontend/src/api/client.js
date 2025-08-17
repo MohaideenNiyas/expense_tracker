@@ -1,7 +1,7 @@
 import axios from "axios";
 import { auth } from "../auth/firebase";
 import { onIdTokenChanged, getIdToken } from "firebase/auth";
-
+console.log("API URL from env:", import.meta.env.VITE_API_URL);
 export const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL,
   timeout: 15000
