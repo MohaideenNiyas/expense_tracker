@@ -1,9 +1,9 @@
 # Expense Tracker (Full Stack)
 
-[![React](https://reactjs.org/)  
-[![TailwindCSS](https://tailwindcss.com/)  
-[![Express](https://expressjs.com/)  
-[![Firebase](https://firebase.google.com/)  
+[React](https://reactjs.org/)  
+[TailwindCSS](https://tailwindcss.com/)  
+[Express](https://expressjs.com/)  
+[Firebase](https://firebase.google.com/)  
 
 
 🚀 A **full-stack expense tracker web application** built with **React (Vite) + Tailwind CSS** for the frontend, **Express.js + Firebase Firestore** for the backend, and **Firebase Authentication** for secure login.  
