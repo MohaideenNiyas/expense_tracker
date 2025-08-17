@@ -3,7 +3,7 @@ import { auth } from "../auth/firebase";
 import { onIdTokenChanged, getIdToken } from "firebase/auth";
 
 export const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
+  baseURL: import.meta.env.VITE_API_URL || "expense-tracker-y5n0.onrender.com/api",
   timeout: 15000
 });
 
