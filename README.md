@@ -36,74 +36,107 @@
 
 ---
 
+## 📂 Project Structure
 
-⚡ Installation & Setup
-1. Clone repository
-git clone https://github.com/MohaideenNiyas/expense_tracker.git
+```
+expense-tracker/
+├─ backend/                          # Express.js + Firebase Admin
+│  ├─ src/
+│  │  ├─ routes/                     # API routes
+│  │  ├─ controllers/                # Controller logic
+│  │  ├─ services/                   # Firebase setup
+│  │  ├─ middleware/                 # Auth & error handling
+│  │  └─ validators/                 # Joi schemas
+│  ├─ package.json
+│  └─ .env                           # Backend secrets
+│
+└─ frontend/                         # React + Vite + Tailwind
+   ├─ src/
+   │  ├─ api/                        # Axios client
+   │  ├─ auth/                       # Firebase client setup
+   │  ├─ components/                 # Reusable UI components
+   │  ├─ pages/                      # Dashboard, Transactions, Login, Register
+   │  └─ utils/                      # Helper functions (formatting, etc.)
+   ├─ package.json
+   └─ .env                           # Frontend env (API + Firebase config)
+```
+
+---
+
+## ⚡ Installation & Setup (Local Development)
+
+### 1. Clone repository
+```bash
+git clone https://github.com/yourusername/expense-tracker.git
 cd expense-tracker
+```
 
-2. Backend setup
+### 2. Backend setup
+```bash
 cd backend
-cp .env.example .env   # Fill in Firebase service account details
+cp .env.example .env   # fill in Firebase service account details
 npm install
 npm run dev
+```
+➡️ Runs at: `http://localhost:5000`
 
-
-➡️ Backend runs at: http://localhost:5000
-
-3. Frontend setup
+### 3. Frontend setup
+```bash
 cd ../frontend
-cp .env.example .env   # Fill in Firebase client config + API URL
+cp .env.example .env   # fill in Firebase client config + API URL
 npm install
 npm run dev
+```
+➡️ Runs at: `http://localhost:5173`
 
+---
 
-➡️ Frontend runs at: http://localhost:5173
+## 🔑 Environment Variables
 
-🔑 Environment Variables
-Backend (backend/.env)
+### Backend (`backend/.env`)
+```ini
 PORT=5000
-CLIENT_ORIGIN=http://localhost:5173
+CLIENT_ORIGIN=https://expense-tracker-45.vercel.app
 
-FIREBASE_PROJECT_ID="your-project-id"
-FIREBASE_CLIENT_EMAIL="service-account@your-project-id.iam.gserviceaccount.com"
-FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\n....\n-----END PRIVATE KEY-----\n"
+FIREBASE_PROJECT_ID=expense-tracker-634e4
+FIREBASE_CLIENT_EMAIL=firebase-adminsdk-fbsvc@expense-tracker-634e4.iam.gserviceaccount.com
+FIREBASE_PRIVATE_KEY=-----BEGIN PRIVATE KEY-----\n....\n-----END PRIVATE KEY-----\n
+```
 
-Frontend (frontend/.env)
-VITE_API_URL="http://localhost:5000/api"
-VITE_FIREBASE_API_KEY="your_api_key"
-VITE_FIREBASE_AUTH_DOMAIN="your-app.firebaseapp.com"
-VITE_FIREBASE_PROJECT_ID="your-project-id"
-VITE_FIREBASE_APP_ID="your-app-id"
+### Frontend (`frontend/.env`)
+```ini
+VITE_API_URL=https://expense-tracker-y5n0.onrender.com
+VITE_FIREBASE_API_KEY=your-firebase-api-key
+VITE_FIREBASE_AUTH_DOMAIN=expense-tracker-634e4.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=expense-tracker-634e4
+VITE_FIREBASE_APP_ID=1:292368059259:web:da98b4c0caa0e5202d4bde
+VITE_FIREBASE_MESSAGING_SENDER_ID=292368059259
+VITE_FIREBASE_MEASUREMENT_ID=G-XXXXXXXXXX
+VITE_FIREBASE_STORAGE_BUCKET=your-bucket-name
+```
 
-🖼️ Screenshots
-🔐 Login / Register
-<img width="1919" height="932" alt="Screenshot 2025-08-16 201724" src="https://github.com/user-attachments/assets/77d69b99-46a4-4055-914a-fd8eb9483b43" />
-<img width="1919" height="936" alt="Screenshot 2025-08-16 201714" src="https://github.com/user-attachments/assets/cbfa6ec7-12eb-4bd2-8e2c-29a3c369385e" />
+---
 
+## 🚀 Deployment
 
-📊 Dashboard
-<img width="1919" height="928" alt="Screenshot 2025-08-16 201636" src="https://github.com/user-attachments/assets/c340fcbf-e065-462a-9432-83089e6bf268" />
-<img width="1917" height="930" alt="Screenshot 2025-08-16 201644" src="https://github.com/user-attachments/assets/3785e106-c351-4a2a-8cb5-a158ce90140a" />
-<img width="1919" height="924" alt="Screenshot 2025-08-16 201651" src="https://github.com/user-attachments/assets/41314455-3eea-4401-9b48-f74f528541bf" />
+- **Frontend** → [Vercel](https://vercel.com/)  
+- **Backend** → [Render](https://render.com/)  
+- **Database & Auth** → [Firebase Firestore](https://firebase.google.com/products/firestore) + [Firebase Authentication](https://firebase.google.com/products/auth)  
 
-💰 Transactions
-<img width="1919" height="930" alt="Screenshot 2025-08-16 201700" src="https://github.com/user-attachments/assets/50587549-71e1-4e1b-ace9-a394c42f2363" />
+---
 
-🚀 Deployment
+## 📌 Future Enhancements
+- 🔑 Google / GitHub OAuth login  
+- 📑 Export transactions as CSV/PDF  
+- 🎯 Budget goals and alerts  
+- 📱 Mobile app version (React Native)  
 
-Frontend → Vercel
+---
 
-Backend → Render
+## 🤝 Contributing
+Pull requests are welcome! Open an issue for suggestions and improvements.  
 
-Database & Auth → Firebase Firestore + Firebase Authentication
+---
 
-📌 Future Enhancements
-
-🔑 Google / GitHub OAuth with Firebase Auth
-
-📑 Export transactions as CSV/PDF
-
-🎯 Budget goals and spending alerts
-
-📱 React Native mobile app
+## 📄 License
+This project is licensed under the **MIT License**.
