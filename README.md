@@ -4,6 +4,12 @@
 
 Easily manage your income and expenses, categorize transactions, and view insights with beautiful charts.
 
+🌍 Live Demo
+
+Frontend (Vercel): https://expense-tracker-45.vercel.app
+
+Backend (Render): https://expense-tracker-y5n0.onrender.com
+
 ✨ Features
 
 🔐 Authentication – Secure login & registration with Firebase Auth (Email/Password)
@@ -22,6 +28,27 @@ Frontend: React (Vite), Tailwind CSS, Recharts
 Backend: Express.js, Firebase Admin SDK, Joi, Morgan, CORS
 Database & Auth: Firebase Firestore, Firebase Authentication
 
+📂 Project Structure
+expense-tracker/
+├─ backend/                          # Express.js + Firebase Admin
+│  ├─ src/
+│  │  ├─ routes/                     # API routes
+│  │  ├─ controllers/                # Controller logic
+│  │  ├─ services/                   # Firebase setup
+│  │  ├─ middleware/                 # Auth & error handling
+│  │  └─ validators/                 # Joi schemas
+│  ├─ package.json
+│  └─ .env                           # Backend secrets
+│
+└─ frontend/                         # React + Vite + Tailwind
+   ├─ src/
+   │  ├─ api/                        # Axios client
+   │  ├─ auth/                       # Firebase client setup
+   │  ├─ components/                 # Reusable UI components
+   │  ├─ pages/                      # Dashboard, Transactions, Login, Register
+   │  └─ utils/                      # Helper functions (formatting, etc.)
+   ├─ package.json
+   └─ .env                           # Frontend env (API + Firebase config)
 
 
 ⚡ Installation & Setup
@@ -79,9 +106,9 @@ VITE_FIREBASE_APP_ID="your-app-id"
 
 🚀 Deployment
 
-Frontend → Netlify / Vercel
+Frontend → Vercel
 
-Backend → Render / Fly.io
+Backend → Render
 
 Database & Auth → Firebase Firestore + Firebase Authentication
 
