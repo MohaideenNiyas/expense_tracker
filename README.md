@@ -1,4 +1,4 @@
-# 📊 Expense Tracker (Full Stack)
+# Expense Tracker (Full Stack)
 
 [![React](https://img.shields.io/badge/Frontend-React-blue?logo=react)](https://reactjs.org/)  
 [![TailwindCSS](https://img.shields.io/badge/Style-TailwindCSS-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)  
@@ -96,23 +96,23 @@ npm run dev
 ### Backend (`backend/.env`)
 ```ini
 PORT=5000
-CLIENT_ORIGIN=https://expense-tracker-45.vercel.app
+CLIENT_ORIGIN=https://your-frontend-url.vercel.app
 
-FIREBASE_PROJECT_ID=expense-tracker-634e4
-FIREBASE_CLIENT_EMAIL=firebase-adminsdk-fbsvc@expense-tracker-634e4.iam.gserviceaccount.com
+FIREBASE_PROJECT_ID=your-firebase-project-id
+FIREBASE_CLIENT_EMAIL=your-firebase-client-email
 FIREBASE_PRIVATE_KEY=-----BEGIN PRIVATE KEY-----\n....\n-----END PRIVATE KEY-----\n
 ```
 
 ### Frontend (`frontend/.env`)
 ```ini
-VITE_API_URL=https://expense-tracker-y5n0.onrender.com
+VITE_API_URL=https://your-backend-url.onrender.com
 VITE_FIREBASE_API_KEY=your-firebase-api-key
-VITE_FIREBASE_AUTH_DOMAIN=expense-tracker-634e4.firebaseapp.com
-VITE_FIREBASE_PROJECT_ID=expense-tracker-634e4
-VITE_FIREBASE_APP_ID=1:292368059259:web:da98b4c0caa0e5202d4bde
-VITE_FIREBASE_MESSAGING_SENDER_ID=292368059259
-VITE_FIREBASE_MEASUREMENT_ID=G-XXXXXXXXXX
-VITE_FIREBASE_STORAGE_BUCKET=your-bucket-name
+VITE_FIREBASE_AUTH_DOMAIN=your-firebase-auth-domain
+VITE_FIREBASE_PROJECT_ID=your-firebase-project-id
+VITE_FIREBASE_APP_ID=your-firebase-app-id
+VITE_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
+VITE_FIREBASE_MEASUREMENT_ID=your-measurement-id
+VITE_FIREBASE_STORAGE_BUCKET=your-storage-bucket
 ```
 
 ---
@@ -133,10 +133,3 @@ VITE_FIREBASE_STORAGE_BUCKET=your-bucket-name
 
 ---
 
-## 🤝 Contributing
-Pull requests are welcome! Open an issue for suggestions and improvements.  
-
----
-
-## 📄 License
-This project is licensed under the **MIT License**.
