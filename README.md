@@ -96,7 +96,7 @@ npm run dev
 ### Backend (`backend/.env`)
 ```ini
 PORT=5000
-CLIENT_ORIGIN=https://your-frontend-url.vercel.app
+CLIENT_ORIGIN=http://localhost:5173
 
 FIREBASE_PROJECT_ID=your-firebase-project-id
 FIREBASE_CLIENT_EMAIL=your-firebase-client-email
@@ -105,7 +105,7 @@ FIREBASE_PRIVATE_KEY=-----BEGIN PRIVATE KEY-----\n....\n-----END PRIVATE KEY----
 
 ### Frontend (`frontend/.env`)
 ```ini
-VITE_API_URL=https://your-backend-url.onrender.com
+VITE_API_URL=http://localhost:5000
 VITE_FIREBASE_API_KEY=your-firebase-api-key
 VITE_FIREBASE_AUTH_DOMAIN=your-firebase-auth-domain
 VITE_FIREBASE_PROJECT_ID=your-firebase-project-id
