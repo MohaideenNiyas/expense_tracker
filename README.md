@@ -28,27 +28,27 @@ Frontend: React (Vite), Tailwind CSS, Recharts
 Backend: Express.js, Firebase Admin SDK, Joi, Morgan, CORS
 Database & Auth: Firebase Firestore, Firebase Authentication
 
-📂 Project Structure
+## 📂 Project Structure
 expense-tracker/
-├─ backend/                          # Express.js + Firebase Admin
-│  ├─ src/
-│  │  ├─ routes/                     # API routes
-│  │  ├─ controllers/                # Controller logic
-│  │  ├─ services/                   # Firebase setup
-│  │  ├─ middleware/                 # Auth & error handling
-│  │  └─ validators/                 # Joi schemas
-│  ├─ package.json
-│  └─ .env                           # Backend secrets
+├─ backend/ # Express.js + Firebase Admin
+│ ├─ src/
+│ │ ├─ routes/ # API routes
+│ │ ├─ controllers/ # Controller logic
+│ │ ├─ services/ # Firebase setup
+│ │ ├─ middleware/ # Auth & error handling
+│ │ └─ validators/ # Joi schemas
+│ ├─ package.json
+│ └─ .env # Backend secrets
 │
-└─ frontend/                         # React + Vite + Tailwind
-   ├─ src/
-   │  ├─ api/                        # Axios client
-   │  ├─ auth/                       # Firebase client setup
-   │  ├─ components/                 # Reusable UI components
-   │  ├─ pages/                      # Dashboard, Transactions, Login, Register
-   │  └─ utils/                      # Helper functions (formatting, etc.)
-   ├─ package.json
-   └─ .env                           # Frontend env (API + Firebase config)
+└─ frontend/ # React + Vite + Tailwind
+├─ src/
+│ ├─ api/ # Axios client
+│ ├─ auth/ # Firebase client setup
+│ ├─ components/ # Reusable UI components
+│ ├─ pages/ # Dashboard, Transactions, Login, Register
+│ └─ utils/ # Helper functions (formatting, etc.)
+├─ package.json
+└─ .env # Frontend env (API + Firebase config)
 
 
 ⚡ Installation & Setup
